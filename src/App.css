@@ -1,0 +1,50 @@
+.App-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.orders-table_cell {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.orders-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.orders-table tr:hover {
+  background-color: #ddd;
+}
+
+.orders-table_header-cell {
+  padding: 10px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+
+.pos-center {
+  position: fixed;
+  top: calc(50% - 40px);
+  left: calc(50% - 40px);
+}
+
+.loader {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #3498db;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
